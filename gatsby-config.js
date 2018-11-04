@@ -3,6 +3,14 @@ const config = require("./data/SiteConfig");
 const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
 
 module.exports = {
+  plugins: [
+  {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography.js`,
+      },
+    },
+  ],
   pathPrefix: config.pathPrefix,
   siteMetadata: {
     siteUrl: config.siteUrl + pathPrefix,
