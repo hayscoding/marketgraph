@@ -1,6 +1,6 @@
 {
-  "name": "productlife",
-  "description": "Make money building things.",
+  "name": "MarketGraph",
+  "description": "MarketGraph helps you quickly obtain & collect user data on project ideas & campaigns.",
   "version": "1.0.0",
   "author": "Hays Stanford <stanfordhays@gmail.com>",
   "dependencies": {
@@ -40,9 +40,12 @@
     "react-share": "^1.15.1",
     "react-social-icons": "^2.7.0",
     "react-twitter-widgets": "^1.4.0",
-    "react-youtube": "^7.6.0"
+    "react-youtube": "^7.6.0",
+    "rehype-react": "^3.0.3",
+    "styled-components": "^4.0.3"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.8.0",
     "cli-glob": "^0.1.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.2",
@@ -61,10 +64,8 @@
     "write-good": "^0.11.3"
   },
   "keywords": [
-    "gatsby",
-    "blog",
-    "casper",
-    "starter"
+    "marketgraph",
+    "landing pages"
   ],
   "license": "MIT",
   "main": "n/a",

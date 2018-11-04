@@ -1,28 +1,26 @@
 import React from "react"
+import rehypeReact from "rehype-react"
+import LandingButton from "../components/LandingButton/LandingButton.jsx"
 
 export default () => (
   <div style={{ margin: `3rem auto`, maxWidth: 600 }}>
-    <h1>Richard Hamming on Luck</h1>
+    <h1>A Headline You'll Want to Read</h1>
     <div>
-      <p>
-        From Richard Hamming’s classic and must-read talk, “
-        <a href="http://www.cs.virginia.edu/~robins/YouAndYourResearch.html">
-          You and Your Research
-        </a>
-        ”.
-      </p>
       <blockquote>
         <p>
-          There is indeed an element of luck, and no, there isn’t. The prepared
-          mind sooner or later finds something important and does it. So yes, it
-          is luck.{" "}
           <em>
-            The particular thing you do is luck, but that you do something is
-            not.
+            "Before, I was skeptical. But now, I am sure.""
           </em>
         </p>
       </blockquote>
+      <img src="https://source.unsplash.com/random/600x300" alt="" />
+      <p>
+        There's more to this story, as we'll soon find out.
+      </p>
     </div>
-    <p>Posted April 09, 2011</p>
+    <div>
+      <LandingButton></LandingButton>
+    </div>
+    <p></p>
   </div>
 )
