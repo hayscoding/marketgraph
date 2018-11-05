@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "gatsby-link";
 import rehypeReact from "rehype-react"
 import LandingButton from "../components/LandingButton/LandingButton.jsx"
 
@@ -21,6 +22,6 @@ export default () => (
     <div>
       <LandingButton></LandingButton>
     </div>
-    <p></p>
+    <Link to="/"><p>Return to MarketGraph Home</p></Link>
   </div>
 )

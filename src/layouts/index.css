@@ -239,11 +239,11 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Merriweather", serif;
+    font-family: "Helvetica", serif;
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
-    color: #3a4145;
+    color: #5a4145;
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
     -o-font-feature-settings: 'kern' 1;
@@ -251,11 +251,11 @@ body {
 }
 
 ::-moz-selection {
-    background: #d6edff;
+    background: #4978b3;
 }
 
 ::selection {
-    background: #d6edff;
+    background: #a0d6eb;
 }
 
 h1,
@@ -267,7 +267,7 @@ h6 {
     -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-    color: #2e2e2e;
+    color: #13192b;
     line-height: 1.15em;
     margin: 0 0 0.4em;
     font-family: "Open Sans", sans-serif;
@@ -402,13 +402,13 @@ blockquote cite {
 blockquote cite a { font-weight: normal; }
 
 mark {
-    background-color: #fdffb6;
+    background-color: #f2f3f1;
 }
 
 code,
 tt {
     padding: 1px 3px;
-    font-family: Inconsolata, monospace, sans-serif;
+    font-family: Helvetica, monospace, sans-serif;
     font-size: 0.85em;
     white-space: pre-wrap;
     border: #e3edf3 1px solid;
@@ -426,7 +426,7 @@ pre {
     border: #e3edf3 1px solid;
     width: 100%;
     padding: 10px;
-    font-family: Inconsolata, monospace, sans-serif;
+    font-family: Helvetica, monospace, sans-serif;
     font-size: 0.9em;
     white-space: pre;
     overflow: auto;
@@ -488,9 +488,9 @@ table thead:first-child tr:first-child td {
     border-top: 0;
 }
 
-table tbody + tbody { border-top: #efefef 2px solid; }
+table tbody + tbody { border-top: #679db7 2px solid; }
 
-table table table { background-color: #fff; }
+table table table { background-color: #f2f3f1; }
 
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
@@ -567,25 +567,25 @@ select {
 }
 
 button {
-    min-height: 35px;
+    min-height: 50px;
     width: auto;
     display: inline-block;
-    padding: 0.1rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     cursor: pointer;
     outline: none;
     text-decoration: none;
-    color: #fff;
+    color: #f2f3f1;
     font-family: 'Open Sans', sans-serif;
-    font-size: 11px; /* Hacks targeting Firefox. */
+    font-size: 32px; /* Hacks targeting Firefox. */
     line-height: 13px; /* Hacks targeting Firefox. */
     font-weight: 300;
     text-align: center;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: none;
     text-shadow: none;
     border-radius: 0.3rem;
-    border: rgba(0, 0, 0, 0.05) 0.1em solid;
-    background: #5ba4e5;
+    border: rgba(0, 0, 0, 0.05) 0.01em solid;
+    background: green;
 }
 
 /* ==========================================================================

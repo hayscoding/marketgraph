@@ -18,18 +18,19 @@ import PageTitle from "../components/PageTitle/PageTitle";
 import PageImage from "../components/PageImage/PageImage";
 import PageDescription from "../components/PageDescription/PageDescription";
 import PageEmailForm from "../components/PageEmailForm/PageEmailForm";
+import HeroCallout from "../components/HeroCallout/HeroCallout";
+import Landing from "../components/Landing/Landing";
 import ProductVote from "../components/ProductVote/ProductVote";
 import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
 import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
+import LandingButton from "../components/LandingButton/LandingButton.jsx";
 
-const descriptionHeader1 = "Get What You Want."
-const descriptionHeader2 = "Give People What They Want."
+const descriptionHeader1 = "MarketGraph helps you quickly obtain user data on project ideas and campaigns."
+const descriptionHeader2 = "Get data to measure your product-market fit."
+const descriptionHeader3 = "For early stage founders and entrepreneurs."
 
-const portfolioHeader1 = "What We've Built"
-const portfolioHeader2 = ""
-
-const gifUrl = './images/sample-project-2.gif'
-const iphone6Img = './images/iphone6.png'
+const image1 = 'https://source.unsplash.com/random/200x125'
+const image2 = 'https://source.unsplash.com/random/200x125'
 
 const youtubeEmbed = () => {
     const aspectRatio = 16/9
@@ -103,15 +104,15 @@ class IndexTemplate extends React.Component {
     if(this.state.width < 768)
       return(
         <div id="signup" style={styles.signupSmall}>
-          <h2 style={{color: "black", paddingBottom: '20px'}}>Sign Up Now!</h2>
-          <PageEmailForm />
+          <h2 style={{color: "black", paddingBottom: '20px'}}>Yes, I want to create landing pages!</h2>
+          <LandingButton></LandingButton>
         </div>
       )
     else
       return(
         <div id="signup" style={styles.signup}>
-          <h2 style={{color: "black", paddingBottom: '20px'}}>Sign Up Now!</h2>
-          <PageEmailForm />
+          <h2 style={{color: "black", paddingBottom: '20px'}}>Yes, I want to create landing pages!</h2>
+          <LandingButton></LandingButton>
         </div>
       )
   }
@@ -139,7 +140,7 @@ class IndexTemplate extends React.Component {
 
         <SiteWrapper>
           {/* All the main content gets inserted here */}
-          <div className="home-template" style={{background: 'linear-gradient(to right bottom, #430089, #82ffa1)'}}>
+          <div className="home-template" style={{background: 'linear-gradient(to left bottom, #230089, #62ffa1)'}}>
             {/* The big featured header */}
             <MainHeader cover={config.siteCover}>
               {/*
@@ -147,28 +148,24 @@ class IndexTemplate extends React.Component {
               </MainNav>
               */}
               <div className="vertical">
-                <PageTitle text={config.siteTitle} />
+                <HeroCallout />
                 <div className="main-header-content inner">
                   <div className="row">
                     <div className="col left">
-                      <PageDescription text={config.siteDescription} />
                       <Link
                         to="signup"
                         data-offset="-45"
                         spy
                         smooth
                         duration={500}>
-                        <ProductVote />
+                        <Landing />
                       </Link>
                     </div>
 
                     <div className="col right">
                       <div className="parent stacked-img">
                         <div className="image1 stacked-img">
-                          {youtubeEmbed()}
-                        </div>
-                        <div className="image2 stacked-img">
-                          <img src={iphone6Img} className="stacked-img" />
+                          <img src='https://source.unsplash.com/random/300x200' alt="" />
                         </div>
                       </div>
                     </div>
@@ -188,71 +185,15 @@ class IndexTemplate extends React.Component {
             <MainContent>
               <div id="description" style={styles.mainDiv}>
                 <br />
-                <br />
-                <br />
                 <div  style={styles.mainCol}>
                   <h2 style={{color: "black"}}>{descriptionHeader1}</h2>
-                  <h2 style={{color: "black"}}>{descriptionHeader2}</h2>
+                  <h3 style={{color: "blue"}}>{descriptionHeader2}</h3>
+                  <h6 style={{color: "grey"}}>{descriptionHeader3}</h6>
                   <hr style={styles.regLine}/>
+                  <LandingButton></LandingButton>
                   <div className="row">
-                    <div className="small-col small-left">
-                      <PageImage imageUrl={'./images/node-js-logo.png'} widthPx={200} />
-                    </div>
-                    <div className="small-col small-right">
-                      <PageImage imageUrl={'./images/react-logo.png'} widthPx={300} />
-                    </div>
                   </div>
                 </div>
-                <br />
-                <br />
-                <br />
-              </div>
-            </MainContent>
-            <MainContent>
-              <div id="portfolio" style={styles.mainDiv}>
-                <div  style={styles.mainCol}>
-                  <h2 style={{color: "black"}}>{portfolioHeader1}</h2>
-                  <h2 style={{color: "black"}}>{portfolioHeader2}</h2>
-                  <hr style={styles.regLine}/>
-                  <div className="row">
-                    <div className="small-col small-left">
-                      <PageImage imageUrl={'./images/node-js-logo.png'} widthPx={200} />
-                    </div>
-                    <div className="small-col small-right">
-                      <PageImage imageUrl={'./images/react-logo.png'} widthPx={300} />
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <br />
-                <br />
-              </div>
-            </MainContent>
-            <MainContent>
-              <div id="testimonials" style={styles.mainDiv}>
-                <div  style={styles.mainCol}>
-                  <h2 style={{color: "black"}}>Work Together or Alone</h2>
-                  <hr style={styles.regLine}/>
-                  <div className="row">
-                    <div style={styles.circleImage} className="multi-col">
-                      <PageImage imageUrl={'./images/person-1.jpg'} widthPx={150} rounded={true} />
-                    </div>
-                    <div className="multi-col">
-                      <PageImage imageUrl={'./images/person-2.jpg'} widthPx={150} rounded={true}/>
-                    </div>
-                    <div className="multi-col">
-                      <PageImage imageUrl={'./images/person-3.jpg'} widthPx={150} rounded={true}/>
-                    </div>
-                    <div className="multi-col">
-                      <PageImage imageUrl={'./images/person-5.jpg'} widthPx={150} rounded={true}/>
-                    </div>
-                    <div className="multi-col">
-                      <PageImage imageUrl={'./images/person-4.jpg'} widthPx={150} rounded={true}/>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <br />
                 <br />
               </div>
             </MainContent>
@@ -261,16 +202,16 @@ class IndexTemplate extends React.Component {
                 <div style={styles.mainCol}>
                 <div className="row">
                     <div className="small-col small-left">
-                      <PageImage imageUrl={'./images/instructor.jpg'} widthPx={350} rounded={true}/>
+                      <PageImage imageUrl={'https://source.unsplash.com/random/300x300'} widthPx={350} rounded={true}/>
                     </div>
                     <div className="small-col small-right">
-                      <h2 style={{color: "black", paddingBottom: '20px'}}>Hays Stanford</h2>
-                      My name is Hays Stanford and I'll be your instructor. You will be provided with step-by-step details on how to build the projects you and your fellow students choose. 
-                      <br /><br />
-                      I will show you how to break a product idea into small, managable bits. We will then execute each of the steps until the idea has been brought to life.
+                      <h2 style={{color: "black", paddingBottom: '20px'}}>Validate your ideas and marketing strategy fast.</h2>
+                      <em>"I had multiple competing ideas that I wasn't sure which was best. MarketGraph helped me get actual results to help decide, quickly." - Margaret, Chief Marketing Strategist</em>
+
+                      <br />
                     </div>
                   </div>
-                  
+
                   <hr style={styles.regLine}/>
                     {this.showSignup()}
                 </div>
@@ -294,23 +235,23 @@ class IndexTemplate extends React.Component {
 
 const styles = {
   mainDiv: {
-    textAlign: 'center', 
-    maxWidth: "100%", 
-    background: "#262A30", 
+    textAlign: 'center',
+    maxWidth: "100%",
+    background: "#262A30",
     margin: "auto"
   },
   mainCol: {
-    textAlign: 'center', 
-    background: "rgba(255, 255, 255, 1)", 
-    width: "70%", 
+    textAlign: 'center',
+    background: "rgba(255, 255, 255, 1)",
+    width: "70%",
     margin: "auto",
     padding: "3.5% 6%",
     borderRadius: '20px',
   },
   regLine: {
-    height: '3px', 
-    background: "#dddddd", 
-    width: "70%", 
+    height: '3px',
+    background: "#dddddd",
+    width: "70%",
     margin: "40px auto"
   },
   signup: {

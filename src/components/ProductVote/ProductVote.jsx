@@ -26,7 +26,7 @@ class ProductVote extends React.Component {
       <div className="product-vote">
         <h1 className="title">What do you want to learn first?</h1>
 
-        {/* ------------------before launch you mother fucker fuck god fucking bitch----------------------- */}
+        {/* */}
         {/* ---- REBUILD THIS FORM TO TRACK DECISIONS OF USERS ---- */}
         {/* ------------------------------------------------------- */}
         <form name="product-vote" action={() => {}} method="post" /*data-netlify="true" data-netlify-honeypot="bot-field"*/>
