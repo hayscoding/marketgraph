@@ -3,6 +3,8 @@ import FancyButton from "../FancyButton/FancyButton";
 
 import "./ProductVote.css";
 
+const title = "Create a Free Page, Now."
+
 class ProductVote extends React.Component {
   constructor(props) {
     super(props);
