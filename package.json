@@ -5,7 +5,7 @@
   "author": "Hays Stanford <stanfordhays@gmail.com>",
   "dependencies": {
     "babel-eslint": "^8.1.2",
-    "babel-plugin-lodash": "^3.2.11",
+    "babel-plugin-lodash": "^3.3.4",
     "classnames": "^2.2.5",
     "gatsby": "^1.9.130",
     "gatsby-link": "^1.6.31",
@@ -28,7 +28,7 @@
     "gatsby-source-filesystem": "^1.5.10",
     "gatsby-transformer-json": "^1.0.14",
     "gatsby-transformer-remark": "^1.7.24",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.11",
     "lodash-webpack-plugin": "^0.11.4",
     "moment": "^2.20.1",
     "react": "^15.6.1",
@@ -54,8 +54,8 @@
     "prettier": "^1.5.3",
     "remark-cli": "^4.0.0",
     "remark-preset-lint-recommended": "^3.0.1",
-    "standard-version": "^4.3.0",
-    "stylefmt": "^6.0.0",
+    "standard-version": "^4.4.0",
+    "stylefmt": "^6.0.3",
     "stylelint": "^8.4.0",
     "stylelint-config-standard": "^17.0.0",
     "write-good": "^0.11.3"
